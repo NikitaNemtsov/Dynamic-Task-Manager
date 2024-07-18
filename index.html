@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dynamic Task Manager</title>
+</head>
+<body>
+    <form id="taskForm">
+        <label for="subject">Předmět:</label>
+        <input type="text" id="subject" required><br><br>
+
+        <label for="text">Text:</label>
+        <input type="text" id="text" required><br><br>
+
+        <label for="status">Stav:</label>
+        <select id="status" required>
+            <option value="Nový">Nový</option>
+            <option value="Probíhající">Probíhající</option>
+            <option value="Dokončený">Dokončený</option>
+        </select><br><br>
+
+        <label for="creationDate">Datum vytvoření:</label>
+        <input type="date" id="creationDate" required><br><br>
+
+        <label for="completionDate">Datum splnění:</label>
+        <input type="date" id="completionDate"><br><br>
+
+        <button type="submit">Uložit</button>
+    </form>
+
+    <table id="taskTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Předmět</th>
+                <th>Text</th>
+                <th>Stav</th>
+                <th>Datum vytvoření</th>
+                <th>Datum splnění</th>
+                <th>Možnosti</th>
+            </tr>
+        </thead>
+        <tbody id="taskTableBody">
+        </tbody>
+    </table>
+
+    <button id="generateRandom">Generovat náhodné záznamy</button>
+
+    
+    <script src="js/script.js"></script>
+</body>
+
+
+</html>

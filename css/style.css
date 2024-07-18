@@ -1,0 +1,48 @@
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+    border: 2px solid #00BFFF; 
+}
+th, td {
+    border: 1px solid #00BFFF; 
+    padding: 8px; 
+    text-align: left; 
+}
+thead {
+    background-color: #f0f8ff; 
+}
+button {
+    background-color: #00BFFF; 
+    color: white; 
+    border: none; 
+    padding: 5px 10px; 
+    margin: 2px; 
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: #009ACD; 
+}
+input, select {
+    width: 95%; 
+    padding: 8px; 
+    margin: 5px 0; 
+    border: 1px solid #00BFFF; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+}
+input:focus, select:focus {
+    outline: none; 
+    border-color: #009ACD;
+    box-shadow: 0 0 8px 0 #00BFFF; 
+}
+label {
+    display: block; 
+    margin-bottom: 5px; 
+    color: #333; 
+}
+
+
+label:focus-within {
+    color: #009ACD; 
+}
